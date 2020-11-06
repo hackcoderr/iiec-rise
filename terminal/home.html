@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title> Terminal </title>
+</head>
+
+
+
+<body>
+    <nav>
+        <form action=http://192.168.29.5/cgi-bin/web.py>
+
+            <label style="font-size:35px;">Linux Command</label>
+            <input type="text" name="x" required>
+            <input type="submit" formtarget="output">
+        </form>
+        <iframe src="output.html" name="output" height="300px" width="700" style="border:8px black solid; background: #FFFFFF;"></iframe>
+    </nav>
+    <article>
+        <iframe src="man.html" name="man" height="600px" width="400" style="border:none;"></iframe>
+    </article>
+
+</body>
+
+</html>
+
+<style>
+    body {
+        background-image: url('img/terminal_bg.png');
+        background-size: 100% 100%;
+    }
+    
+    form {
+        padding-top: 150px;
+    }
+    
+    nav {
+        float: left;
+        width: 50%;
+        padding: 20px;
+    }
+    
+    article {
+        float: left;
+        padding-left: 50px;
+        width: 42%;
+    }
+    
+    input[type=text],
+    select {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+        background-color: red;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: black;
+        color: white;
+    }
+</style>
