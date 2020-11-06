@@ -56,7 +56,7 @@ Hello, this is my test html file.
 ```
 > ***Note*** : Here, I am disable firewalld service it has lots of reason.
 ```
-#systemc
+#systemctl disable firewalld
 
 
 
